@@ -78,5 +78,11 @@ namespace UnitTestProject2
                 Assert.Fail();
         }
 
+        [TestMethod]
+        public void OnlyToTestGit()
+        {
+
+        }
+
     }
 }
