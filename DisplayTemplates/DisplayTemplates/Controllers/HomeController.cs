@@ -11,7 +11,7 @@ namespace DisplayTemplates.Controllers
     {
         public ActionResult Index()
         {
-            var users = new List<User>() {new User() {FirstName = "Fido", MiddleInitial = "S", LastName = "Dido", DateOfBirth = DateTime.Now, IsAdmin = false} };
+            var users = new List<User>() {new User() {FirstName = "Fido", MiddleInitial = "S", LastName = "Dido", DateOfBirth = DateTime.Now, IsAdmin = false, Roles = new List<Role>() {new Role() {ID = 1, Name = "Programmer"} } } };
             return View(users);
         }
 
