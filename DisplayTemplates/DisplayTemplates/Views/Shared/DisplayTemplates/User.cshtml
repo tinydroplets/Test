@@ -1,0 +1,19 @@
+﻿@model DisplayTemplates.Models.User
+
+@{
+    var allRoles = "";
+}
+<div style="display: table-row">
+    <h3>@Model.FirstName @Model.MiddleInitial @Model.LastName (ID @Model.ID)</h3>
+    <dl class="inline">
+        <dt><strong>Date of Birth</strong></dt>
+        <dd>@Html.DisplayFor(x => x.DateOfBirth)</dd>
+        <dt><strong>Is Admin</strong></dt>
+        <dd>(@Model.IsAdmin ? "YES": "NO")</dd>
+        <dt><strong>Username</strong></dt>
+        <dd>@Model.Username</dd>
+        <dt>Roles</dt>
+        <dd>@(string.IsNullOrWhiteSpace(allRoles) ? "NONE" : allRoles )</dd>
+    </dl>
+</div>
+
