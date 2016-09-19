@@ -3,10 +3,7 @@
 @{
 
     var allRoles = Model.Roles != null ? Model.Roles.Aggregate("", (current, role) => current + (role.Name + ", ")) : "";
-    if (allRoles.Contains(","))
-    {
-        allRoles = allRoles.Remove(allRoles.LastIndexOf(","));
-    }
+    allRoles = allRoles.Contains(",") ? allRoles.Remove(allRoles.LastIndexOf(",")) : allRoles;
 }
 <div style="display: table-row">
     <h3>@Model.FirstName @Model.MiddleInitial @Model.LastName (ID @Model.ID)</h3>
@@ -14,7 +11,7 @@
         <dt><strong>Date of Birth</strong></dt>
         <dd>@Html.DisplayFor(x => x.DateOfBirth)</dd>
         <dt><strong>Is Admin</strong></dt>
-        <dd>(@Model.IsAdmin ? "YES": "NO")</dd>
+        <dd>@(Model.IsAdmin ? "YES": "NO")</dd>
         <dt><strong>Username</strong></dt>
         <dd>@Model.Username</dd>
         <dt>Roles</dt>
