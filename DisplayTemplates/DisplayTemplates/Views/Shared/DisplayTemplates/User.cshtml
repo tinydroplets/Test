@@ -1,7 +1,12 @@
 ﻿@model DisplayTemplates.Models.User
 
 @{
-    var allRoles = "";
+
+    var allRoles = Model.Roles != null ? Model.Roles.Aggregate("", (current, role) => current + (role.Name + ", ")) : "";
+    if (allRoles.Contains(","))
+    {
+        allRoles = allRoles.Remove(allRoles.LastIndexOf(","));
+    }
 }
 <div style="display: table-row">
     <h3>@Model.FirstName @Model.MiddleInitial @Model.LastName (ID @Model.ID)</h3>
