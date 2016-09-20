@@ -16,6 +16,11 @@
         <dd>@Model.Username</dd>
         <dt>Roles</dt>
         <dd>@(string.IsNullOrWhiteSpace(allRoles) ? "NONE" : allRoles )</dd>
+        @foreach (var address in Model.Addresses)
+        {
+            <dt>Address</dt>
+                <dd>@Html.DisplayFor(x => address)</dd> //Display Template for Address
+        }
     </dl>
 </div>
 
