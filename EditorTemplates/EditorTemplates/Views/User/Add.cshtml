@@ -1,0 +1,9 @@
+﻿@model EditorTemplates.Models.User 
+
+<h2>Add a User</h2>
+
+@using (@Html.BeginForm("Add", "User", FormMethod.Post))
+{
+    @Html.EditorForModel()
+    <input type="Submit" value="Save"/>
+}

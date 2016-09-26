@@ -1,0 +1,22 @@
+﻿@model EditorTemplates.Models.User
+
+<div>
+    <label>First Name:</label>
+    @Html.TextBoxFor(x => x.FirstName)
+</div>
+<div>
+    <label>Middle Initial</label>
+    @Html.TextBoxFor(x => x.MiddleInitial, new {length = 1})
+</div>
+<div>
+    <label>Last Name</label>
+    @Html.TextBoxFor(x => x.LastName)
+</div>
+<div>
+    <label>Username</label>
+    @Html.TextBoxFor(x=>x.Username)
+</div>
+<div>
+    @Html.CheckBoxFor(x => x.IsAdmin)
+    <label for="IsAdmin">Admin</label>
+</div>
