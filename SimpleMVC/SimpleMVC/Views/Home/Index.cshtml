@@ -9,6 +9,9 @@
         <td>
             Name
         </td>
+        <td>
+           Action 
+        </td>
     </tr>
     @foreach (var customer in Model.Customers)
     {
@@ -18,6 +21,9 @@
             </td>
             <td>
                 @customer.Name
+            </td>
+            <td>
+                @Html.ActionLink("Edit","Edit", new {Id = @customer.Id, @customer.Name})
             </td>
         </tr>
     }

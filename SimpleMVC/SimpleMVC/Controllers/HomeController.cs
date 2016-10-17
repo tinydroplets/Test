@@ -16,6 +16,11 @@ namespace SimpleMVC.Controllers
             return View(viewModel);
         }
 
+        public ActionResult Edit(int id, string name)
+        {
+           return View(); 
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
