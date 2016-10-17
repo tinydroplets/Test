@@ -1,0 +1,24 @@
+﻿@using SimpleMVC.Models
+@model SimpleMVC.ViewModels.CustomerViewModel
+
+<table class="table table-striped">
+    <tr>
+        <td>
+            Id
+        </td>
+        <td>
+            Name
+        </td>
+    </tr>
+    @foreach (var customer in Model.Customers)
+    {
+        <tr>
+            <td>
+                @customer.Id
+            </td>
+            <td>
+                @customer.Name
+            </td>
+        </tr>
+    }
+</table>
