@@ -1,1 +1,8 @@
 C:\Users\amamuwala\Desktop\Github\Test\ExpressMapper\ExpressMapper\bin\Debug\ExpressMapper.exe.config
+C:\Users\amamuwala\Desktop\Github\Test\ExpressMapper\ExpressMapper\bin\Debug\ExpressMapper.exe
+C:\Users\amamuwala\Desktop\Github\Test\ExpressMapper\ExpressMapper\bin\Debug\ExpressMapper.pdb
+C:\Users\amamuwala\Desktop\Github\Test\ExpressMapper\ExpressMapper\bin\Debug\ExpressMapper.dll
+C:\Users\amamuwala\Desktop\Github\Test\ExpressMapper\ExpressMapper\bin\Debug\ExpressMapper.xml
+C:\Users\amamuwala\Desktop\Github\Test\ExpressMapper\ExpressMapper\obj\Debug\ExpressMapper.csprojResolveAssemblyReference.cache
+C:\Users\amamuwala\Desktop\Github\Test\ExpressMapper\ExpressMapper\obj\Debug\ExpressMapper.exe
+C:\Users\amamuwala\Desktop\Github\Test\ExpressMapper\ExpressMapper\obj\Debug\ExpressMapper.pdb
