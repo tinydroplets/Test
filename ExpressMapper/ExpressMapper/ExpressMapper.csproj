@@ -47,12 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommunicationsViewModel.cs" />
+    <Compile Include="CustomMapper.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeViewModel.cs" />
     <Compile Include="FinanceEmployeeViewModel.cs" />
     <Compile Include="HrEmployeeViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RetailViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
